@@ -20,7 +20,14 @@ function displayCards() {
     card.innerHTML = `<div class='card' data-value= ${element}><div class='card-content'>${element}</div></div>`;
     table.appendChild(card);
   });
-  console.log(table);
+}
+
+function flip() {
+  this.classList.add("fliped");
 }
 
 displayCards();
+
+document.querySelectorAll(".card").forEach(function (element) {
+  element.addEventListener("click", flip);
+});

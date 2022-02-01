@@ -56,7 +56,7 @@ main {
   background: transparent;
 }
 
-.card.turned {
+.card.fliped {
   transform: rotateY(-180deg);
 }
 
